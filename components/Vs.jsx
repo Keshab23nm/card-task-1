@@ -22,11 +22,11 @@ const Vs = () => {
             console.log(shows())
             setshow(shows())
           }}>
-          Hide Massage
+          {show ? "Hide Messege" : "Show Messege"}
         </button>
    </div>
         {/* <p className={show==true? "block" : "hidden"}> */}
-        <p className={show==true? "block" : "hidden" } >
+        <p className={show==true? "block bg-red-100 text-red-500 p-4 border-1 border-red-500 rounded-md" : "hidden" } >
 
           🚀 This message is controlled by useState boolean value.
         </p>
